@@ -1,0 +1,227 @@
+.container {
+    width: 600px;
+    height: 150px;
+    opacity: 1.0;
+    display: block;
+    margin: 0 auto;
+    padding: 40px 40px;
+}
+#logincont {
+    width: 600px;
+    height: 150px;
+    background-color: #07867B;
+    opacity: 1.0;
+    display: block;
+    margin: 0 auto;
+    padding: 40px 40px;
+}
+
+#judul {
+	text-align: justify;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3em;
+    color: rgb(255, 255, 255);
+    border: 1px;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+table#full{
+	width: 100%;
+    color: rgb(255, 255, 255);
+    background-color:  rgba(0, 110, 255, 0.493);
+}
+
+abc {
+	font-size: 8pt;
+}
+aaa {
+    color: white;
+    opacity: 1;
+}
+td#center {
+	text-align: center;
+}
+input#actred:link, input#actred:visited {
+    background-color: white;
+    color: darkorange;
+    padding: 0px 0px;
+    text-align: center; 
+    text-decoration: none;
+    display: block;
+}
+input#actred:hover, input#actred:active {
+    background-color: darkorange;
+    color: white;
+    padding: 0px 0px;
+    text-align: center; 
+    text-decoration: none;
+    display: block;
+}
+input#actblue:link, input#actblue:visited {
+    background-color: white;
+    color: teal;
+    padding: 0px 0px;
+    text-align: center; 
+    text-decoration: none;
+    display: block;
+}
+input#actblue:hover, input#actblue:active {
+    background-color: blue;
+    color: white;
+    padding: 0px 0px;
+    text-align: center; 
+    text-decoration: none;
+    display: block;
+}
+a#act:link, a#act:visited {
+    background-color:  rgba(0, 110, 255, 0.493);
+    color: white;
+    padding: 10px 20px; /* (tinggi) (lebar) */
+    margin: 0px 0px;    /* (atasbawah) (kanankiri) */
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    width: 91.5%;
+}
+a#act:hover, a#act:active {
+    background-color: rgb(6, 214, 241);
+    color: white;
+    padding: 10px 20px; /* (tinggi) (lebar) */
+    margin: 0px 0px;    /* (atasbawah) (kanankiri) */
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    width: 91.5%;
+}
+a#actK:link, a#act:visited {
+    background-color:  rgba(0, 110, 255, 0.493);
+    color: white;
+    padding: 10px 20px; /* (tinggi) (lebar) */
+    margin: 0px 0px;    /* (atasbawah) (kanankiri) */
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    width: 81.5%;
+}
+a#actK:hover, a#act:active {
+    background-color: rgb(6, 214, 241);
+    color: white;
+    padding: 10px 20px; /* (tinggi) (lebar) */
+    margin: 0px 0px;    /* (atasbawah) (kanankiri) */
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    width: 81.5%;
+}
+
+a#actG:link, a#act:visited {
+    background-color:  rgba(0, 110, 255, 0.493);
+    color: white;
+    padding: 10px 20px; /* (tinggi) (lebar) */
+    margin: 0px 0px;    /* (atasbawah) (kanankiri) */
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    width: 81%;
+    opacity: 0.493;
+}
+a#actG:hover, a#act:active {
+    background-color: rgb(6, 214, 241);
+    color: white;
+    padding: 10px 20px; /* (tinggi) (lebar) */
+    margin: 0px 0px;    /* (atasbawah) (kanankiri) */
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    width: 81%;
+    opacity: 1;
+}
+a#menu:link, a#menu:visited {
+    /* background-color: #f44336;
+    color: white; */
+    padding: 0px 0px;
+    /* text-align: center; */
+    text-decoration: none;
+    /* display: inline-block; */
+}
+a#menu:hover, a#menu:active {
+    background-color: cyan;
+    /* color: white; */
+    padding: 0px 0px;
+    /* text-align: center;  */
+    text-decoration: none;
+    /* display: inline-block; */
+}
+.yellowbutton {
+    background-color: turquoise;
+    border: none;
+    color: black;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+button#black:hover, button#black:active {
+    background-color: black;
+    border: solid;
+    color: turquoise;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+.ON {
+    background-color: black;
+    border: 1;
+    border-color: teal;
+    color: white;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+button#ON:hover, button#ON:active {
+    background-color: teal;
+    color: black;
+    padding: 0px 0px;
+    text-align: center; 
+    text-decoration: none;
+    display: block;
+}
+.OFF {
+    background-color: black;
+    border: 1;
+    border-color: darkorange;
+    color: white;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+button#OFF:hover, button#OFF:active {
+    background-color: darkorange;
+    color: black;
+    padding: 0px 0px;
+    text-align: center; 
+    text-decoration: none;
+    display: block;
+    border: 0px;
+}
+.yellowbuttong {
+    background-color: turquoise;
+    border: none;
+    color: black;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
