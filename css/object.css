@@ -25,6 +25,38 @@ h1#judul {
 	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
+#inputcont{
+    width: 20%;
+    text-align: left;
+}
+
+select{
+    width: 100%;
+}
+
+button#submit{
+    width: 100%;
+    background-color:  rgba(100, 255, 200, 0.5);
+    border: none;
+    /* border-color: rgba(100, 255, 200, 0.5); */
+    color: black;
+    width: 100%;
+    height: 30px;
+    font-weight: bold;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+button#submit:hover{
+    background-color:  black;
+    color: rgba(100, 255, 200, 1);
+    font-weight: bold;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
 #datacontainer{
     width: 100%;
     text-align: center;
@@ -32,6 +64,13 @@ h1#judul {
 table#data{
     background-color: rgba(100, 255, 200, 0.5);
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+table#inputdata{
+    background-color: rgba(100, 255, 200, 0.5);
+    width: 20px;
     margin-left: auto;
     margin-right: auto;
     color: black;
@@ -99,18 +138,28 @@ a#actK:link, a#act:visited {
     width: 92.5%;
     
 }
+/*
 a#actK:hover, a#act:active {
     background-color: rgba(100, 255, 200, 0.5);
     border:1px;
     border-color: rgba(100, 255, 200, 0);
     color: white;
-    padding: 10px 20px; /* (tinggi) (lebar) */
-    margin: 0px 0px;    /* (atasbawah) (kanankiri) */
+    padding: 10px 20px; 
+    margin: 0px 0px;
     text-align: center; 
     text-decoration: none;
     display: inline-block;
     width: 92.5%;
-    
+}
+*/
+a#actK:hover, a#act:active {
+    background-color:  black;
+    color: rgba(100, 255, 200, 1);
+    /* font-weight: bold; */
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    width: 92.5%;
 }
 
 #about{
@@ -125,6 +174,6 @@ a#actK:hover, a#act:active {
     text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 0.5px 0.5px #000, -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000;
     text-decoration: none;
 }
-#about:link{
+a#about:link, a#about:active, a#about:visited{
     text-decoration: none;
 }
