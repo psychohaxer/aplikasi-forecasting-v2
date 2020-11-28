@@ -106,9 +106,11 @@
                     <td id="center"><aaa><?php echo $row['bulan'];?></aaa></td>
                     <td id="center"><aaa><?php echo $row['tahun'];?></aaa></td>
                     <td id="center"><aaa><?php echo $row['jumlah'];?></aaa></td>
-                    <td id="center" colspan="2">
-                        <a href="edit_siswa.php?nis=<?php echo $row['nis'];?>" id="actK">Edit</a>
-                        <a href="hapus_siswa.php?nis=<?php echo $row['nis'];?>" id="actK">Delete</a>
+                    <td id="center">
+                        <a href="lihat.php?id_jual=<?php echo $row['id_jual'];?>" id="actK">Edit</a>
+                    </td>
+                    <td id="center">
+                        <a href="lihat.php?id_jual=<?php echo $row['id_jual'];?>" id="actK">Delete</a>
                     </td>
                 </tr>
                 <?php
