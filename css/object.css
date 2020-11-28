@@ -67,6 +67,7 @@ table#data{
     margin-left: auto;
     margin-right: auto;
     color: black;
+    table-layout : fixed;
 }
 table#inputdata{
     background-color: rgba(100, 255, 200, 0.5);
@@ -107,6 +108,17 @@ td#center {
     color: black;
 	text-align: center;
 }
+tr#ramalan:hover{
+    background-color: rgba(100, 255, 200, 0.5);
+    color: white;
+    width: 100%;
+}
+td#ramalan {
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding: 10px 10px;
+}
 
 /* td#center_bt{
     color: white;
@@ -130,7 +142,7 @@ td#center {
 
 a#actK:link, a#act:visited {
     color: black;
-    padding: 10px 20px; /* (tinggi) (lebar) */
+    padding: 10px 10px; /* (tinggi) (lebar) */
     margin: 0px 0px;    /* (atasbawah) (kanankiri) */
     text-align: center; 
     text-decoration: none;
@@ -174,6 +186,7 @@ a#actK:hover, a#act:active {
     text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 0.5px 0.5px #000, -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000;
     text-decoration: none;
 }
-a#about:link, a#about:active, a#about:visited{
+a#repo:link, a#repo:active, a#repo:visited{
     text-decoration: none;
+    color: white;
 }
