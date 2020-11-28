@@ -78,7 +78,7 @@
                     <th id="judul"> - </th>
                 </tr>
                 <?php
-                    $no = $x+1;
+                    $no = $x;
                     $b1 = ($sxy - (($sx * $sy)/$no))/($sxx-(($sx*$sx)/$no));
                     $b0 = ($sy/$no) - ($b1*($sx/$no));
                 ?>
