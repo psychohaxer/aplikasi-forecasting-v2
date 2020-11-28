@@ -1,1 +1,1 @@
-<div id="about"><h4> 201951071 | FIRMAN ADI NUR FATIN | <a href="https://github.com/psychohaxer/aplikasi-forecasting">psychohaxer/aplikasi-forecasting</a></h4></div>
+<div id="about"><h4> 201951071 | FIRMAN ADI NUR FATIN | <a id="repo" href="https://github.com/psychohaxer/aplikasi-forecasting">psychohaxer/aplikasi-forecasting</a></h4></div>
