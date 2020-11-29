@@ -1,8 +1,8 @@
 <?php
-    include_once 'operation/connect.php';
     include_once 'operation/forecast.php';
 
     $forecast = new Forecast();
+    $koneksi = 
 ?>
 
 <html>
