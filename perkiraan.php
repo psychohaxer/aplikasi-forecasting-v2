@@ -1,8 +1,6 @@
 <?php
-    include_once 'operation/forecast.php';
-
-    $forecast = new Forecast();
-    $koneksi = 
+    include_once 'operation/penjualan.php';
+    include_once 'operation/backend_perkiraan.php'
 ?>
 
 <html>
@@ -23,6 +21,12 @@
         </style>
         
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+        <script>
+            function hitung(value){
+                window.location.href="perkiraan.php?estimasi=" + value;
+            }
+        </script>
     </head>
     <body>
         
@@ -39,22 +43,21 @@
                     <th id="judul"> XY </th>
                 </tr>
                 <?php
-                    $result=$forecast->lihatData();
-                    $x = $sx = $sy = $sxx = $sxy=0;
-                    while ($row=$result->fetch_assoc()){
+                    $arrayData = Penjualan::readAllData();
+                    foreach ($arrayData as $data){
                 ?>
                 <tr id="ramalan">
-                    <td id="ramalan"><aaa><?php echo "Minggu ke-" , $row['minggu'] , " Bulan " , $row['bulan'] , "<br>Tahun " , $row['tahun'];?></aaa></td>
-                    <td id="ramalan"><aaa><?php echo $row['jumlah'];?></aaa></td>
+                    <td id="ramalan"><aaa><?php echo "Minggu ke-" , $data->minggu , " Bulan " , $data->bulan , "<br>Tahun " , $data->tahun;?></aaa></td>
+                    <td id="ramalan"><aaa><?php echo $data->jumlah;?></aaa></td>
                     <td id="ramalan"><aaa><?php echo $x;?></aaa></td>
-                    <td id="ramalan"><aaa><?php echo $row['jumlah'];?></aaa></td>
+                    <td id="ramalan"><aaa><?php echo $data->jumlah;?></aaa></td>
                     <td id="ramalan"><aaa><?php echo $x*$x;?></aaa></td>
-                    <td id="ramalan"><aaa><?php echo $row['jumlah']
+                    <td id="ramalan"><aaa><?php echo $data->jumlah
                     *$x;
                     $sx+=$x;
-                    $sy+=$row['jumlah'];
+                    $sy+=$data->jumlah;
                     $sxx+=($x*$x);
-                    $sxy+=($row['jumlah']*$x);
+                    $sxy+=($data->jumlah*$x);
                     $x++;?></aaa></td>
                 </tr>
                 <?php
@@ -89,7 +92,42 @@
             </table>
         </div>
 
+
+        <?php
+            if(isset($_GET['estimasi'])){
+                $now = $_GET['estimasi'];
+                $estimasi[$now] = 'selected';
+                $prediksi = $b0 + $b1 * $now;
+            }
+        ?>
+
         <br>
+        <div id="predicont">
+            <table id="prediksidata">
+                <th id="judul" colspan="4"> Form Prediksi Penjualan </th>
+                <tr width="fit-content">
+                    <td width="fit-content"> Penjualan untuk &nbsp</td>
+                    
+                    <td width="fit-content"> <select id="dropdown" name="minggu" form="prediksi" method="POST" onchange="hitung(this.value)">
+                        <option value="1" <?php echo $estimasi['1'] ?> > 1 </option>
+                        <option value="2" <?php echo $estimasi['2'] ?> > 2 </option>
+                        <option value="3" <?php echo $estimasi['3'] ?> > 3 </option>
+                        <option value="4" <?php echo $estimasi['4'] ?> > 4 </option>
+                        <option value="5" <?php echo $estimasi['5'] ?> > 5 </option>
+                        <option value="6" <?php echo $estimasi['6'] ?> > 6 </option>
+                        <option value="7" <?php echo $estimasi['7'] ?> > 7 </option>
+                        <option value="8" <?php echo $estimasi['8'] ?> > 8 </option>
+                        <option value="9" <?php echo $estimasi['9'] ?> > 9 </option>
+                        <option value="10" <?php echo $estimasi['10'] ?>> 10 </option>
+                    </select> </td>
+                    <td width="fit-content">&nbsp minggu berikutnya: &nbsp</td>
+                    <td width="fit-content"> <?php echo $prediksi; ?> </td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
         <?php include 'footer.php' ?>
     </body>
 </html>

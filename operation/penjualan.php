@@ -2,7 +2,7 @@
     include_once 'connect.php';
 
     class Penjualan{
-        public $id_jual, $minggu, $bulan, $tahun, $jumlah;
+        public $id_jual, $minggu, $bulan, $tahun, $jumlah, $estimasi;
         private $connection;
 
         function __construct($id_jual, $minggu, $bulan, $tahun, $jumlah){

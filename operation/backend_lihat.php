@@ -9,8 +9,24 @@
         '4' => '',
     ];
 
+    $bulan = array();
+    $bulan = [
+        '1' => '',
+        '2' => '',
+        '3' => '',
+        '4' => '',
+        '5' => '',
+        '6' => '',
+        '7' => '',
+        '8' => '',
+        '9' => '',
+        '10' => '',
+        '11' => '',
+        '12' => '',
+    ];
+
     if(isset($_POST['submit'])){
-        var_dump($_POST);
+        // var_dump($_POST);
         $penjualan->id_jual = $_GET['id_jual'];
         $penjualan->minggu = $_POST['minggu'];
         $penjualan->bulan = $_POST['bulan'];
@@ -31,6 +47,7 @@
         $penjualan->readSpecificData($id_jual);
 
         $minggu[$penjualan->minggu] = 'selected';
+        $bulan[$penjualan->bulan] = 'selected';
     }
 
     if (isset($_GET['state'])){

@@ -1,6 +1,5 @@
 <?php
     include_once 'operation/penjualan.php';
-
     include_once 'operation/backend_lihat.php'
 ?>
 
@@ -42,18 +41,18 @@
                 <tr width="100%">
                     <td align="left"> Bulan </td>
                     <td> <select id="dropdown" name="bulan" form="input" method="POST">
-                        <option value="1"> Januari </option>
-                        <option value="2"> Februari </option>
-                        <option value="3"> Maret </option>
-                        <option value="4"> April </option>
-                        <option value="5"> Mei </option>
-                        <option value="6"> Juni </option>
-                        <option value="7"> Juli </option>
-                        <option value="8"> Agustus </option>
-                        <option value="9"> September </option>
-                        <option value="10"> Oktober </option>
-                        <option value="11"> November </option>
-                        <option value="12"> Desember </option>
+                        <option value="1" <?php echo $bulan['1'] ?>> Januari </option>
+                        <option value="2" <?php echo $bulan['2'] ?>> Februari </option>
+                        <option value="3" <?php echo $bulan['3'] ?>> Maret </option>
+                        <option value="4" <?php echo $bulan['4'] ?>> April </option>
+                        <option value="5" <?php echo $bulan['5'] ?>> Mei </option>
+                        <option value="6" <?php echo $bulan['6'] ?>> Juni </option>
+                        <option value="7" <?php echo $bulan['7'] ?>> Juli </option>
+                        <option value="8" <?php echo $bulan['8'] ?>> Agustus </option>
+                        <option value="9" <?php echo $bulan['9'] ?>> September </option>
+                        <option value="10" <?php echo $bulan['10'] ?>> Oktober </option>
+                        <option value="11" <?php echo $bulan['11'] ?>> November </option>
+                        <option value="12" <?php echo $bulan['12'] ?>> Desember </option>
                     </select> </td>
                 </tr width="100%">
                 <tr>
