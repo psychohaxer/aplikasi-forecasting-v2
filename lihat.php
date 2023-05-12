@@ -7,7 +7,7 @@
     <head>
         <title> Aplikasi Forecasting </title>
 
-        <link rel="stylesheet" type="text/css" href="css/screen.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/screen.css">
         <link rel="stylesheet" type="text/css" href="css/object.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
@@ -18,8 +18,10 @@
                 background-position:center;
                 background-attachment:fixed;
             }
-        </style>
+        </style> -->
         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     </head>
     <body>
