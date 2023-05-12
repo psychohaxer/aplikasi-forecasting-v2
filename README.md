@@ -1,11 +1,11 @@
-# Aplikasi Forecasting
-Repository ini berisi source code tugas Data Mining
+# Aplikasi Forecasting v2.0
+Repository ini berisi source code contoh program yang mengimplementasikan Regresi Linear Sederhana.
 
 ## Author
-201951071 | Firman Adi Nur Fatin
+Firman Adi Nur Fatin
 
-## Status: Done
-Program ini sudah bisa digunakan dan dinilai.
+## Status: Sedang Dioptimasi
+Kode program ini sedang dioptimalkan tanpa mengganti fungsi utamanya.
 
 ## Cara Penggunaan
 1. Masukkan semua file di folder webserver (misal `htdocs` atau `www`).
